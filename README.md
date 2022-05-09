@@ -46,7 +46,7 @@ To view all testing, go to [WIREFRAMES.md](WIREFRAMES.md)
 
 - The site was deployed to Heroku. I used the steps listed below to deploy. 
   -  Fork or clone this repository
-      -  `git clone https://github.com/pattytonyoneill/Our-Family-Recipes.git`
+      -  `git clone https://github.com/pattytonyoneill/Family-Recipes.git`
   -  Register in [Heroku.com](https://www.heroku.com)
   
   -  Create a new Heroku app. 
@@ -63,7 +63,7 @@ To view all testing, go to [WIREFRAMES.md](WIREFRAMES.md)
     -  allow a few minutes for the app to build
     -  then it deploys with live link
 
-The live link can be found here - https://our-family-recipes14.herokuapp.com/
+The live link can be found here - https://family-recipes14.herokuapp.com/
 
 ## Future Additions to page
 -
