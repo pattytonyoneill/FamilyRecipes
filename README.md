@@ -66,8 +66,9 @@ To view all testing, go to [WIREFRAMES.md](WIREFRAMES.md)
 The live link can be found here - https://family-recipes14.herokuapp.com/
 
 ## Future Additions to page
--
--
+- put drop down menu to have user choose minutes and hours
+- put drop down menu to have user choose measurement type
+- have measurements able to be converted from metric to US standard
 
 ## Credits
 -  [Create a Recipe App](https://engineertodeveloper.com/getting-started-with-django-forms-create-a-recipe-app/)
