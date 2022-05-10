@@ -10,6 +10,8 @@ class IngredientsInline(admin.TabularInline):
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
     inlines = [IngredientsInline, ]
+    search_fields = ['title', 'content']
+    summernote_fields = ('content',)
 
 
 @admin.register(Comment)
