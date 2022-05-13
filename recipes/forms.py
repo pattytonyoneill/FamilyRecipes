@@ -1,5 +1,5 @@
 from django import forms
-from .models import Recipe, Comment
+from .models import Recipe, Ingredients, Comment
 
 class RecipeForm(forms.ModelForm):
     class Meta:
@@ -9,9 +9,12 @@ class RecipeForm(forms.ModelForm):
 class IngredientsForm(forms.ModelForm):
     class Meta:
         model = Ingredients
-        exclude = ('recipe',)
+        exclude = ('recipes',)
 
-IngredientsFormSet = forms.inlineformset_factory(Recipe, Ingredients, form=IngredientForm)
+
+IngredientsFormSet = forms.inlineformset_factory(
+    Recipe, Ingredients, form=IngredientsForm)
+
 
 class CommentForm(forms.ModelForm):
     class Meta:
