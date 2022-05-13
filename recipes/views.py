@@ -8,7 +8,6 @@ from .forms import CommentForm
 
 class RecipeList(generic.ListView):
     model = Recipe
-    
     template_name = 'index.html'
     paginate_by = 6
     def recipe(self, request, slug, *args, **kwargs):
