@@ -28,5 +28,6 @@
 
 ## Bugs
 - 
+     -![image](testing/name_error.jpg)
 
 Return back to [README.md](README.md)
