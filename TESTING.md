@@ -27,7 +27,7 @@
 - 
 
 ## Bugs
-- 
+- No module named 'recipe'.  Looked through code until I found where I needed to add recipe in urls.py.
      -![image](testing/name_error.jpg)
 
 Return back to [README.md](README.md)
