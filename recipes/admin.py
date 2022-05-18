@@ -8,8 +8,9 @@ class IngredientsInline(admin.TabularInline):
 
 
 @admin.register(Recipe)
-class RecipeAdmin(admin.ModelAdmin):
+class RecipeAdmin(SummernoteModelAdmin):
     inlines = [IngredientsInline, ]
+    list_display = ('title',)
     search_fields = ['title', 'content']
     summernote_fields = ('content',)
 
