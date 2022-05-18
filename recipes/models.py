@@ -2,12 +2,16 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+STATUS = ((0, "Draft"), (1, "Published"))
+
+
 class Recipe(models.Model):
     author = models.OneToOneField(User, unique=True, on_delete=models.CASCADE, null=True)
     title = models.CharField(max_length=150)
     directions = models.TextField()
     prep_time = models.DurationField()
     cook_time = models.DurationField()
+    temperature = models.DurationField()
     servings = models.IntegerField()
 
     def __str__(self):
