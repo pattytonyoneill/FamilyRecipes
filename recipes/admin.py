@@ -7,7 +7,7 @@ class IngredientsInline(admin.TabularInline):
     model = Ingredients
 
 
-
+@admin.register(Recipe)
 class RecipeAdmin(SummernoteModelAdmin):
     inlines = [IngredientsInline, ]
     list_display = ('title', 'slug', 'status', 'created_on')
