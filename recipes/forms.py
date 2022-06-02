@@ -6,6 +6,7 @@ class RecipeForm(forms.ModelForm):
         model = Recipe
         fields = '__all__'
 
+
 class IngredientsForm(forms.ModelForm):
     class Meta:
         model = Ingredients

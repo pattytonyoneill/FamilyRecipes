@@ -7,14 +7,22 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Recipe(models.Model):
-    author = models.OneToOneField(User, unique=True, on_delete=models.CASCADE, null=True)
     title = models.CharField(max_length=150)
+    slug = models.SlugField(max_length=200, unique=True)
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="recipe_posts"
+    )
     featured_image = CloudinaryField('image', default='placeholder')
     directions = models.TextField()
     prep_time = models.DurationField()
     cook_time = models.DurationField()
-  
+
     servings = models.IntegerField()
+    updated_on = models.DateTimeField(auto_now=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+    status = models.IntegerField(choices=STATUS, default=0)
+    likes = models.ManyToManyField(
+        User, related_name='recipe_like', blank=True)
 
     def __str__(self):
         return f"{self.title} recipe by {self.author}"
@@ -25,7 +33,8 @@ class Ingredients(models.Model):
     quantity = models.FloatField()
     measure = models.CharField(max_length=50)
 
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="ingredients", null=True)
+    recipe = models.ForeignKey(
+        Recipe, on_delete=models.CASCADE, related_name="ingredients", null=True)
 
     def __str__(self):
         return self.name
