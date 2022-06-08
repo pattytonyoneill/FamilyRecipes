@@ -10,7 +10,7 @@ class Recipe(models.Model):
     title = models.CharField(max_length=150)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="recipe_posts"
+        User, on_delete=models.CASCADE, related_name="recipe_posts", default=''
     )
     featured_image = CloudinaryField('image', default='placeholder')
     directions = models.TextField()

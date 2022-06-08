@@ -6,16 +6,16 @@
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
                 <!-- Recipe title goes in these h1 tags -->
-                <h1 class="post-title">{{ post.title }}</h1>
+                <h1 class="recipe-title">{{ recipe.title }}</h1>
                 <!-- Recipe author goes before the | the recipe's created date goes after -->
-                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
+                <p class="recipe-subtitle">{{ recipe.author }} | {{ recipe.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
-                {% if "placeholder" in post.featured_image.url %}
+                {% if "placeholder" in recipe.featured_image.url %}
                 <img src="https://images.ctfassets.net/hrltx12pl8hq/rwQ0cOfRYJAyerqgi9kpA/f5e4e7402f456760f62dae1a212b1c5f/shutterstock_1781321441.jpg" width="100%">
                 {% else %}
-                <img class="card-img-top" img src=" {{ post.featured_image.url }}" width="100%">
+                <img class="card-img-top" img src=" {{ recipe.featured_image.url }}" width="100%">
                 {% endif %}
             </div>
         </div>
@@ -29,7 +29,7 @@
                 <!-- The recipe content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
                 <p class="card-text ">
-                    {{ post.content | safe }}
+                    {{ recipe.content | safe }}
                 </p>
                 <div class="row">
 
@@ -40,11 +40,11 @@
                                 {% csrf_token %}
                                 {% if liked %}
 
-                                <button type="submit" name="recipe_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
 
                                 {% else %}
 
-                                <button type="submit" name="recipe_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                                <button type="submit" name="recipe_id" value="{{recipe.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
 
                                 {% endif %}
                             </form>
@@ -52,7 +52,7 @@
 
                             <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
-                            <span class="text-secondary"> {{ post.number_of_likes }}</span>
+                            <span class="text-secondary"> {{ recipe.number_of_likes }}</span>
                         </strong>
                     </div>
                     <div class="col-1">
