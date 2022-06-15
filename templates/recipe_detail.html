@@ -9,6 +9,7 @@
                 <h1 class="recipe-title">{{ recipe.title }}</h1>
                 <!-- Recipe author goes before the | the recipe's created date goes after -->
                 <p class="recipe-subtitle">{{ recipe.author }} | {{ recipe.created_on }}</p>
+                
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
@@ -21,7 +22,21 @@
         </div>
     </div>
 </div>
+<div>
+    <div class="container">
+        <div class="col-md-6 recipe-text">
+            {% for ingredient in ingredients %}
+    <p class="recipe-ingredients">{{ ingredient }} {{ingredient.quantity}} {{ingredient.measure}}</p>
+{% endfor %}
+            <!-- Recipe  Direction -->
+            <p class="recipe-directions">{{ recipe.directions }}</p>
+            <p class="recipe-cook_time"> Cook Time (HH:MM:SS) {{ recipe.cook_time }}</p>
+            <p class="recipe-prep_time"> Prep Time (HH:MM:SS) {{ recipe.prep_time }}</p>
+            <p class="recipe-servings"> Servings: {{ recipe.servings }}</p>
+        </div>
 
+    </div>
+</div>
 <div class="container">
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">

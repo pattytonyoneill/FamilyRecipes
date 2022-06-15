@@ -13,10 +13,10 @@ class Recipe(models.Model):
         User, on_delete=models.CASCADE, related_name="recipe_posts", default=''
     )
     featured_image = CloudinaryField('image', default='placeholder')
+    excerpt = models.TextField(blank=True)
     directions = models.TextField()
     prep_time = models.DurationField()
     cook_time = models.DurationField()
-
     servings = models.IntegerField()
     updated_on = models.DateTimeField(auto_now=True)
     created_on = models.DateTimeField(auto_now_add=True)
@@ -32,7 +32,7 @@ class Ingredients(models.Model):
     name = models.CharField(max_length=100)
     quantity = models.FloatField()
     measure = models.CharField(max_length=50)
-
+    # ingredients = Ingredients.objects.filter(recipe=recipe)
     recipe = models.ForeignKey(
         Recipe, on_delete=models.CASCADE, related_name="ingredients", null=True)
 
