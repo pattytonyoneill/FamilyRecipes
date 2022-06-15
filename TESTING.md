@@ -32,6 +32,6 @@
 - NoReverseMatch at /test-recipe/. I had to add a url to my recipes/urls.py
      -![image](testing/no_reverse_match.jpg)
 - Nullable field 'author' on recipe to non nullable field. I edited code until this error was corrected.
-     -![image]testing/nullable_field_author.jpg)
+     -![image](testing/nullable_field_author.jpg)
 
 Return back to [README.md](README.md)
