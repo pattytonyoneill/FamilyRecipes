@@ -38,6 +38,7 @@ User Stories:
 - [Am I Responsive?](http://ami.responsivedesign.is/) used to give a visual of what the project looks like on various devices
 - [Heroku](https://heroku.com): used to deploy the Our Family Recipes app
 - [Cloudinary](https://cloudinary.com/): used to import my Cloudinary field for the featured image
+- [Diffchecker](https://www.diffchecker.com/): used to compare code when I had an error
 
 ### Wireframes
 To view all testing, go to [WIREFRAMES.md](WIREFRAMES.md)
@@ -66,7 +67,7 @@ To view all testing, go to [WIREFRAMES.md](WIREFRAMES.md)
 The live link can be found here - https://family-recipes14.herokuapp.com/
 
 ## Future Additions to page
-- put drop down menu to have user choose minutes and hours
+- put drop down menu to have user choose minutes and hours for the cooking time and prep time
 - put drop down menu to have user choose measurement type
 - have measurements able to be converted from metric to US standard
 
