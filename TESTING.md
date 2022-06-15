@@ -29,5 +29,9 @@
 ## Bugs
 - No module named 'recipe'.  Looked through code until I found where I needed to add recipe in urls.py.
      -![image](testing/name_error.jpg)
+- NoReverseMatch at /test-recipe/. I had to add a url to my recipes/urls.py
+     -![image](testing/no_reverse_match.jpg)
+- Nullable field 'author' on recipe to non nullable field. I edited code until this error was corrected.
+     -![image]testing/nullable_field_author.jpg)
 
 Return back to [README.md](README.md)
