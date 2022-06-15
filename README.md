@@ -84,7 +84,7 @@ The live link can be found here - https://family-recipes14.herokuapp.com/
 ### Acknowlegements
 - _My Mentor for his help and feedback._
 - _Tutor support at Code Institute_
-- _Family for help with help and feedback on website as a use_
+- _Family for help with help and feedback on website as a user_
 
 #### Testing
 
