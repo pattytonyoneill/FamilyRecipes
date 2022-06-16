@@ -2,8 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Recipe, Ingredients
-from .forms import RecipeForm
-from .forms import CommentForm
+from .forms import RecipeForm, CommentForm
 
 
 class RecipeList(generic.ListView):
@@ -41,7 +40,7 @@ class RecipeDetail(View):
             },
         )
    
-    def recipe(self, request, slug, *args, **kwargs):
+    def post(self, request, slug, *args, **kwargs):
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
         ingredients = Ingredients.objects.filter(recipe=recipe)
@@ -54,7 +53,7 @@ class RecipeDetail(View):
             comment_form.instance.email = request.user.email
             comment_form.instance.name = request.user.username
             comment = comment_form.save(commit=False)
-            comment.recipe = recipe
+            comment.post = recipe
             comment.save()
         else:
             comment_form = CommentForm()
@@ -67,12 +66,13 @@ class RecipeDetail(View):
                 "comments": comments,
                 "commented": True,
                 "comment_form": comment_form,
-                "liked": liked
+                "liked": liked,
+                "comment_form": CommentForm()
             },
         )
 class RecipeLike(View):
 
-    def recipe(self, request, slug, *args, **kwargs):
+    def post(self, request, slug, *args, **kwargs):
         recipe = get_object_or_404(Recipe, slug=slug)
         if recipe.likes.filter(id=request.user.id).exists():
             recipe.likes.remove(request.user)

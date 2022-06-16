@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ["family-recipes14.herokuapp.com", "localhost"]
-
+CSRF_TRUSTED_ORIGINS = ['https://8000-pattytonyon-familyrecip-cdcahascgf1.ws-eu47.gitpod.io/']
 
 # Application definition
 
@@ -59,6 +59,8 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
