@@ -33,8 +33,7 @@
      -![image](testing/no_reverse_match.jpg)
 - Nullable field 'author' on recipe to non nullable field. I edited code until this error was corrected.
      -![image](testing/nullable_field_author.jpg)
-- Forbidden CSRF Verification failed
-I added  the code for CSRF_TRUSTED_ORIGINS  to settings.py. 
+- Forbidden CSRF Verification failed. I added  the code for CSRF_TRUSTED_ORIGINS  to settings.py.
      -![image](testing/csrf.jpg)
 - Integrity Error. I needed to correct where I had recipe instead of post.
      -![image](testing/integrity.jpg)
