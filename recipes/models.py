@@ -24,8 +24,14 @@ class Recipe(models.Model):
     likes = models.ManyToManyField(
         User, related_name='recipe_like', blank=True)
 
+    class Meta:
+        ordering = ["-created_on"]
+
     def __str__(self):
-        return f"{self.title} recipe by {self.author}"
+        return self.title
+
+    def number_of_likes(self):
+        return self.likes.count()
 
 
 class Ingredients(models.Model):
