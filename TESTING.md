@@ -37,6 +37,8 @@
      -![image](testing/csrf.jpg)
 - Integrity Error. I needed to correct where I had recipe instead of post.
      -![image](testing/integrity.jpg)
+- Page Not Found error.  I reviewed and edited code.
+     -![image](testing/likesError.jpg)
 
 
 Return back to [README.md](README.md)
