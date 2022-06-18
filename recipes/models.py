@@ -40,7 +40,8 @@ class Ingredients(models.Model):
     measure = models.CharField(max_length=50)
     # ingredients = Ingredients.objects.filter(recipe=recipe)
     recipe = models.ForeignKey(
-        Recipe, on_delete=models.CASCADE, related_name="ingredients", null=True)
+        Recipe, on_delete=models.CASCADE,
+        related_name="ingredients", null=True)
 
     def __str__(self):
         return self.name

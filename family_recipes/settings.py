@@ -35,7 +35,8 @@ DEBUG = False
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ["family-recipes14.herokuapp.com", "localhost"]
-CSRF_TRUSTED_ORIGINS = ['https://8000-pattytonyon-familyrecip-cdcahascgf1.ws-eu47.gitpod.io/']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-pattytonyon-familyrecip-cdcahascgf1.ws-eu47.gitpod.io/']
 
 # Application definition
 
@@ -109,10 +110,10 @@ WSGI_APPLICATION = 'family_recipes.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 # DATABASES = {
-    # 'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-    # }
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
 # }
 
 DATABASES = {
