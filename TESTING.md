@@ -25,7 +25,19 @@
 -  Pep8 for test.py
      - ![image]()
 -  Pep8 for views.py
-     - ![image]()
+     - ![image](testing/views.py.jpg)
+-  Pep8 for recipes/apps.py
+     - ![image](testing/recipes.apps.py.jpg)
+-  Pep8 for recipes/urls.py
+     -  ![image](testing/recipes.urls.py.jpg)
+-  Pep8 for wsgi.py
+     -  ![image](testing/wsgi.py.jpg)
+-  Pep8 for FamilyRecipes/urls.py
+     -  ![image](testing/FamilyRecipes.urls.py.jpg)
+-  Pep8 for
+     -  ![image]()
+-  Pep8 for
+     -  ![image]()
 
 ## Remaining Bugs
 - 
