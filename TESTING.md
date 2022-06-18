@@ -17,7 +17,11 @@
 
 ## Validator Testing
 -  Pep8 for models.py
-     - ![image]()
+     - ![image](testing/models.py.jpg)
+-  Pep8 for forms.py
+     - ![image](testing/forms.py.jpg)
+-  Pep8 for admin.py
+     - ![image](testing/admin.py.jpg)
 -  Pep8 for test.py
      - ![image]()
 -  Pep8 for views.py

@@ -1,4 +1,5 @@
 # [Our Family Recipes]
+- ![image](static/images/DifferentDevices.jpg)
 ## Visit the live Website : **[Family Recipes :arrow_right:](https://family-recipes14.herokuapp.com/)**
 - Family Recipes that are to be shared amoung family and friends.
 - Users will be able to comment on and add useful suggestions of ways that the recipe can be improved.
@@ -14,7 +15,18 @@ User Stories:
   - As a first time user, I would like to view a paginated list of recipes so that I can select which post I want to view.
 
 ## Existing Features
-- 
+- Interactive Elements:
+  - Home page
+    - ![image](static/images/HomePage.jpg)
+  - Login/Logout
+    - ![image](static/images/LoginPage.jpg)
+    - ![image](static/images/LogOut.jpg)
+  - Register
+    - ![image](static/images/Register Page.jpg)
+  - Like
+    - ![image](static/images/LikeComment.jpg)
+  - Comment
+    - ![image](static/images/LikeComment.jpg)
 -
 
 ## Languages Used:
@@ -41,7 +53,7 @@ User Stories:
 - [Diffchecker](https://www.diffchecker.com/): used to compare code when I had an error
 
 ### Wireframes
-To view all testing, go to [WIREFRAMES.md](WIREFRAMES.md)
+To view all wireframes, go to [WIREFRAMES.md](WIREFRAMES.md)
 
 ## Deployment
 
@@ -70,6 +82,7 @@ The live link can be found here - https://family-recipes14.herokuapp.com/
 - put drop down menu to have user choose minutes and hours for the cooking time and prep time
 - put drop down menu to have user choose measurement type
 - have measurements able to be converted from metric to US standard
+- add ability to put fractions in recipes
 
 ## Credits
 -  [Create a Recipe App](https://engineertodeveloper.com/getting-started-with-django-forms-create-a-recipe-app/)
