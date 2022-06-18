@@ -22,7 +22,7 @@ User Stories:
     - ![image](static/images/LoginPage.jpg)
     - ![image](static/images/LogOut.jpg)
   - Register
-    - ![image](static/images/Register Page.jpg)
+    - ![image](testing/register_page.jpg)
   - Like
     - ![image](static/images/LikeComment.jpg)
   - Comment
