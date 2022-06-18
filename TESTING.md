@@ -16,6 +16,7 @@
     - ![image]()
 
 ## Validator Testing
+###Pep8
 -  Pep8 for models.py
      - ![image](testing/models.py.jpg)
 -  Pep8 for forms.py
@@ -34,13 +35,15 @@
      -  ![image](testing/wsgi.py.jpg)
 -  Pep8 for FamilyRecipes/urls.py
      -  ![image](testing/FamilyRecipes.urls.py.jpg)
--  Pep8 for
+-  Pep8 for settings.py
      -  ![image]()
--  Pep8 for
+-  Pep8 for env.py
+     -  ![image]()
+-  Pep8 for manage.py
      -  ![image]()
 
 ## Remaining Bugs
-- 
+-
 
 ## Bugs
 - No module named 'recipe'.  Looked through code until I found where I needed to add recipe in urls.py.
