@@ -12,10 +12,24 @@
   - As a first time user, I would like to view a paginated list of recipes so that I can select which post I want to view.
 
 ## Browser Compatability
-- 
-    - ![image]()
+- Firefox
+    - ![image](testing/firefox.jpg)
+
+- Microsoft Edge
+    - ![image](testing/microsoft_edge.jpg)
+
+- Google Chrome
+    - ![image](testing/google_chrome.jpg)
 
 ## Responsiveness
+- Desktop
+     - ![image](testing/firefox.jpg)
+
+- Tablet
+     - ![image](testing/tablet.jpg)
+
+- Cell Phone
+     - ![image](testing/cell_phone.jpg)
 
 
 ## Validator Testing
@@ -26,8 +40,6 @@
      - ![image](testing/forms.py.jpg)
 -  Pep8 for admin.py
      - ![image](testing/admin.py.jpg)
--  Pep8 for test.py
-     - ![image]()
 -  Pep8 for views.py
      - ![image](testing/views.py.jpg)
 -  Pep8 for recipes/apps.py
@@ -41,9 +53,14 @@
 -  Pep8 for settings.py
      -  ![image]()
 
+### HTML Validation
+- ![image](testing/html_testing.jpg)
+
+### CSS Validation
+- ![image](testing/css_testing.jpg)
 
 ## Remaining Bugs
--
+- The only bug that I know of is that I need to figure out a way to use fractions in ingredients.  Also, it would be better if I could find a more user friendly idea for prep time and cooking time.
 
 ## Bugs
 - No module named 'recipe'.  Looked through code until I found where I needed to add recipe in urls.py.
