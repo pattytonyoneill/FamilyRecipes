@@ -38,7 +38,6 @@ class Ingredients(models.Model):
     name = models.CharField(max_length=100)
     quantity = models.FloatField()
     measure = models.CharField(max_length=50)
-    # ingredients = Ingredients.objects.filter(recipe=recipe)
     recipe = models.ForeignKey(
         Recipe, on_delete=models.CASCADE,
         related_name="ingredients", null=True)
