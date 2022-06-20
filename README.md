@@ -6,7 +6,6 @@
 
 User Stories:
 - _First time Visitor Goals_
-  - As a first time user of this site, I would like to be able to easily create a draft of a recipe.
   - As a first time user, I would like to be able to comment on recipes.
   - As a first time user, I would like to Like/Unlike the recipes.
   - As a first time user, I would like to be able to view likes.
@@ -110,6 +109,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 - put drop down menu to have user choose measurement type
 - have measurements able to be converted from metric to US standard
 - add ability to put fractions in recipes
+- have the user be able to add recipes of their own
 
 ## Credits
 -  [Create a Recipe App](https://engineertodeveloper.com/getting-started-with-django-forms-create-a-recipe-app/)
