@@ -3,13 +3,18 @@
 
 ## User Stories testing:
 - _First time Visitor Goals_
-  - As a first time user of this site, I would like to be able to easily create a draft of a recipe.
   - As a first time user, I would like to be able to comment on recipes.
+     - ![image](static/images/like_comment.jpg)
   - As a first time user, I would like to Like/Unlike the recipes.
+     - ![image](static/images/like_comment.jpg)
   - As a first time user, I would like to be able to view likes.
+     - ![image](testing/view_comment_like.jpg)
   - As a first time user, I would like to view comments on the recipes.
+     - ![image](testing/view_comment_like.jpg)
   - As a first time user, I would like to easily register.
+     - ![image](testing/register_page.jpg)
   - As a first time user, I would like to view a paginated list of recipes so that I can select which post I want to view.
+     - ![image](static/images/home_page.jpg)
 
 ## Browser Compatability
 - Firefox
@@ -33,6 +38,7 @@
 
 
 ## Validator Testing
+
 ### Pep8
 -  Pep8 for models.py
      - ![image](testing/models.py.jpg)
