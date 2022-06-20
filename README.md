@@ -1,5 +1,5 @@
 # [Our Family Recipes]
-- ![image](static/images/DifferentDevices.jpg)
+- ![image](static/images/different_device.jpg)
 ## Visit the live Website : **[Family Recipes :arrow_right:](https://family-recipes14.herokuapp.com/)**
 - Family Recipes that are to be shared amoung family and friends.
 - Users will be able to comment on and add useful suggestions of ways that the recipe can be improved.
@@ -17,16 +17,16 @@ User Stories:
 ## Existing Features
 - Interactive Elements:
   - Home page
-    - ![image](static/images/HomePage.jpg)
+    - ![image](static/images/home_page.jpg)
   - Login/Logout
-    - ![image](static/images/LoginPage.jpg)
-    - ![image](static/images/LogOut.jpg)
+    - ![image](static/images/login_page.jpg)
+    - ![image](static/images/log_out.jpg)
   - Register
     - ![image](testing/register_page.jpg)
   - Like
-    - ![image](static/images/LikeComment.jpg)
+    - ![image](static/images/like_comment.jpg)
   - Comment
-    - ![image](static/images/LikeComment.jpg)
+    - ![image](static/images/like_comment.jpg)
 -
 
 ## Languages Used:
@@ -57,26 +57,53 @@ To view all wireframes, go to [WIREFRAMES.md](WIREFRAMES.md)
 
 ## Deployment
 
-- The site was deployed to Heroku. I used the steps listed below to deploy. 
-  -  Fork or clone this repository
-      -  `git clone https://github.com/pattytonyoneill/Family-Recipes.git`
-  -  Register in [Heroku.com](https://www.heroku.com)
-  
-  -  Create a new Heroku app. 
-  -  Under "Settings" set buildback to **python**.
-  -  Under "Settings" set buildback to **nodeJS**.
-  -  Under "Settings" click "Reveal Config Vars", Set `PORT` to `8000`
-  -  Link the app to the repository.
-  -  Click on Deploy
-    -  select github
-    -  find repo
-    -  click connect button
-    -  enable automatic deployment
-    -  deploy branch
-    -  allow a few minutes for the app to build
-    -  then it deploys with live link
+The live deployed application can be found at [family-recipes14.herokuapp.com](https://family-recipes14.herokuapp.com/).
 
-The live link can be found here - https://family-recipes14.herokuapp.com/
+### Heroku Deployment
+
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+Deployment steps are as follows, after account setup:
+
+- Select *New* in the top-right corner of your Heroku Dashboard, and select *Create new app* from the dropdown menu.
+- Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select *Create App*.
+- From the new app *Settings*, click *Reveal Config Vars*, and set the following key/value pairs:
+  - `CLOUDINARY_URL` (insert your own Cloudinary API key here)
+  - `DATABASE_URL` (this comes from the **Resources** tab, you can get your own Postgres Database using the Free Hobby Tier)
+  - `SECRET_KEY` (this can be any random secret key)
+
+Heroku needs two additional files in order to deploy properly.
+- requirements.txt
+- Procfile
+
+You can install this project's requirements (where applicable) using: `pip3 install -r requirements.txt`. If you have your own packages that have been installed, then the requirements file needs updated using: `pip3 freeze --local > requirements.txt`
+
+The Procfile can be created with the following command: `echo web: gunicorn family_recipes.wsgi > Procfile`
+
+For Heroku deployment, follow these steps to connect your GitHub repository to the newly created app:
+
+Either:
+- Select "Automatic Deployment" from the Heroku app.
+
+Or:
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a <app_name>` (replace app_name with your app, without the angle-brackets)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type: `git push heroku main`
+
+The frontend terminal should now be connected and deployed to Heroku.
+
+### Local Deployment
+
+*Gitpod* IDE was used to write the code for this project.
+
+To make a local copy of this repository, you can clone the project by typing the follow into your IDE terminal:
+- `git clone https://github.com/FamilyRecipes.git`
+
+You can install this project's requirements (where applicable) using: `pip3 install -r requirements.txt`.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/FamilyRecipes)
 
 ## Future Additions to page
 - put drop down menu to have user choose minutes and hours for the cooking time and prep time
