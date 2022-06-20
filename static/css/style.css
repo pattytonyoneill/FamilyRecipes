@@ -140,3 +140,8 @@ body {
     background: transparent;
     border: none;
 }
+
+.card-body a {
+    color: blue;
+    text-decoration: none;
+}
