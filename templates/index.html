@@ -14,10 +14,10 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in recipe.featured_image.url %}
-                                <img class="card-img-top"
+                                <img class="card-img-top" alt="Recipe Image"
                                     src="https://images.ctfassets.net/hrltx12pl8hq/rwQ0cOfRYJAyerqgi9kpA/f5e4e7402f456760f62dae1a212b1c5f/shutterstock_1781321441.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ recipe.featured_image.url }}">
+                                <img class="card-img-top" alt="Recipe Image" src=" {{ recipe.featured_image.url }}">
                                 {% endif %}                               
                                 <div class="image-flash">
                                     <p class="author">Author: {{ recipe.author }}</p>

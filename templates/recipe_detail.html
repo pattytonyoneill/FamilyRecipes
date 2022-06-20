@@ -14,9 +14,9 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in recipe.featured_image.url %}
-                <img src="https://images.ctfassets.net/hrltx12pl8hq/rwQ0cOfRYJAyerqgi9kpA/f5e4e7402f456760f62dae1a212b1c5f/shutterstock_1781321441.jpg" width="100%">
+                <img src="https://images.ctfassets.net/hrltx12pl8hq/rwQ0cOfRYJAyerqgi9kpA/f5e4e7402f456760f62dae1a212b1c5f/shutterstock_1781321441.jpg" alt="Recipe Image" width="100">
                 {% else %}
-                <img class="card-img-top" img src=" {{ recipe.featured_image.url }}" width="100%">
+                <img class="card-img-top" src=" {{ recipe.featured_image.url }}" alt="Recipe Image" width="100">
                 {% endif %}
             </div>
         </div>
