@@ -11,12 +11,15 @@
   - As a first time user, I would like to easily register.
   - As a first time user, I would like to view a paginated list of recipes so that I can select which post I want to view.
 
-## Testing
+## Browser Compatability
 - 
     - ![image]()
 
+## Responsiveness
+
+
 ## Validator Testing
-###Pep8
+### Pep8
 -  Pep8 for models.py
      - ![image](testing/models.py.jpg)
 -  Pep8 for forms.py
@@ -34,13 +37,10 @@
 -  Pep8 for wsgi.py
      -  ![image](testing/wsgi.py.jpg)
 -  Pep8 for FamilyRecipes/urls.py
-     -  ![image](testing/FamilyRecipes.urls.py.jpg)
+     -  ![image](testing/family_recipes.urls.py.jpg)
 -  Pep8 for settings.py
      -  ![image]()
--  Pep8 for env.py
-     -  ![image]()
--  Pep8 for manage.py
-     -  ![image]()
+
 
 ## Remaining Bugs
 -
