@@ -127,6 +127,9 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 - _Tutor support at Code Institute_
 - _Family for help with help and feedback on website as a user_
 
+## Data Schema
+- ![image](testing/data_schema.jpg)
+
 #### Testing
 
 To view all testing, go to [TESTING.md](TESTING.md)
