@@ -66,7 +66,7 @@
 - ![image](testing/css_testing.jpg)
 
 ## Remaining Bugs
-- The only bug that I know of is that I need to figure out a way to use fractions in ingredients.  Also, it would be better if I could find a more user friendly idea for prep time and cooking time.
+- The only bug that I know of is that I need to figure out a way to use fractions in ingredients.  Also, it would be better if I could find a more user friendly idea for prep time and cooking time. The final bug is I would like to have a way for users to add their recipes.
 
 ## Bugs
 - No module named 'recipe'.  Looked through code until I found where I needed to add recipe in urls.py.
