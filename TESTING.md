@@ -19,8 +19,8 @@
      - ![image](static/images/home_page.jpg)
   - As a first time user, I would like to be able to edit and delete my comments.
      ![alt-text-for-image](testing/edit_delete.png)
+     ![alt-text-for-image](testing/check_delete.png)
     
-
 ## Browser Compatability
 - Firefox
     - ![image](testing/firefox.jpg)
@@ -40,7 +40,6 @@
 
 - Cell Phone
      - ![image](testing/cell_phone.jpg)
-
 
 ## Validator Testing
 

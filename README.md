@@ -28,7 +28,8 @@ User Stories:
     - ![image](static/images/like_comment.jpg)
   - Comment
     - ![image](static/images/like_comment.jpg)
--
+  - Ability to edit/delete comments
+    - ![alt-text-for-image](testing/edit_delete.png)
 
 ## Languages Used:
 
@@ -115,8 +116,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 ## Credits
 -  [Create a Recipe App](https://engineertodeveloper.com/getting-started-with-django-forms-create-a-recipe-app/)
--  []()
--  []()
+-  [Update View -Function based Views Django](https://www.geeksforgeeks.org/update-view-function-based-views-django/)
 
 ### Code
 - _Readme used sample readme from code institute as a model. [Github](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md)_
