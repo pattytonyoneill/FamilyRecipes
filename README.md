@@ -6,12 +6,14 @@
 
 User Stories:
 - _First time Visitor Goals_
+  As a first time user of this site, I would like to be able to easily create a draft of a recipe.
   - As a first time user, I would like to be able to comment on recipes.
   - As a first time user, I would like to Like/Unlike the recipes.
   - As a first time user, I would like to be able to view likes.
   - As a first time user, I would like to view comments on the recipes.
   - As a first time user, I would like to easily register.
   - As a first time user, I would like to view a paginated list of recipes so that I can select which post I want to view.
+  - As a first time user, I would like to be able to edit and delete my comments.
 
 ## Existing Features
 - Interactive Elements:

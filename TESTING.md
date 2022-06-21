@@ -3,6 +3,8 @@
 
 ## User Stories testing:
 - _First time Visitor Goals_
+  - As a first time user of this site, I would like to be able to easily create a draft of a recipe. 
+     - Note: this will be added at a later date.
   - As a first time user, I would like to be able to comment on recipes.
      - ![image](static/images/like_comment.jpg)
   - As a first time user, I would like to Like/Unlike the recipes.
@@ -15,6 +17,9 @@
      - ![image](testing/register_page.jpg)
   - As a first time user, I would like to view a paginated list of recipes so that I can select which post I want to view.
      - ![image](static/images/home_page.jpg)
+  - As a first time user, I would like to be able to edit and delete my comments.
+     ![alt-text-for-image](testing/edit_delete.png)
+    
 
 ## Browser Compatability
 - Firefox
@@ -81,6 +86,12 @@
      -![image](testing/integrity.jpg)
 - Page Not Found error.  I reviewed and edited code.
      -![image](testing/likesError.jpg)
+- I kept editing my code until I finally made it possible for the user to Add and Delete their comments.
+     -![image](testing/error1.jpg)
+     -![image](testing/error2.jpg)
+     -![image](testing/error3.jpg)
+     -![image](testing/error4.jpg)
+     -![image](testing/error5.jpg)
 
 
 Return back to [README.md](README.md)
