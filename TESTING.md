@@ -61,7 +61,7 @@
 -  Pep8 for FamilyRecipes/urls.py
      -  ![image](testing/family_recipes.urls.py.jpg)
 -  Pep8 for settings.py
-     -  ![image]()
+     -  ![image](testing/settings.py.jpg)
 
 ### HTML Validation
 - ![image](testing/html_testing.jpg)
